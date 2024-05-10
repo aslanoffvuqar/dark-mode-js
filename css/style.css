@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+
+body {
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: 20px auto;
+}
+
+.cantainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#frist-box {
+    width: 240px;
+    height: 200px;
+    background-color: hsl(227, 47%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 5px solid blue;
+}
+
+.frist-text {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+}
+
+.like-box {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 96px;
+    justify-content: center;
+    background-color: hsl(227, 47%, 96%);
+    padding: 10px;
+}
+
+.footer-box {
+    width: 93%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 93%;
+    margin: 40px auto 20px;
+    font-size: 8px;
+}
+
+.switch {
+    position: relative;
+
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.dark-mode-box {
+    background-color: hsl(230, 17%, 14%);
+}
